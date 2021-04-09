@@ -1,0 +1,366 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>控制台 - Bootstrap后台管理系统模版Ace下载</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<!-- basic scripts -->
+		<script src="assets/js/ace-extra.min.js"></script>
+		<script src='assets/js/jquery-2.0.3.min.js'></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+	</head>
+
+	<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-leaf"></i>
+							梁永宏UI、UE作品展示
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="main-container-inner">
+				<a class="menu-toggler" id="menu-toggler" href="#">
+					<span class="menu-text"></span>
+				</a>
+
+				<div class="sidebar" id="sidebar">
+					<ul class="nav nav-list">
+						<li class="active">
+							<a href="./UI/myjianli.html" target="newFrame">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> 我的简历 </span>
+							</a>
+						</li>
+						<li>
+							<a href="./wuzi/index.html" target="newFrame">
+								<i class="icon-dashboard"></i>
+								<span class="menu-text"> 物资管理原型 </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="./hongshuiyubao/shouye.html" target="newFrame">
+								<i class="icon-text-width"></i>
+								<span class="menu-text"> 洪灾评估原型 </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-desktop"></i>
+								<span class="menu-text"> UI 界面 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<!-- <li>
+									<a href="elements.html">
+										<i class="icon-double-angle-right"></i>
+										目录
+									</a>
+								</li>  -->
+
+								<li>
+									<a href="#" class="dropdown-toggle">
+										<i class="icon-double-angle-right"></i>
+
+										系统界面
+										<b class="arrow icon-angle-down"></b>
+									</a>
+
+									<ul class="submenu">
+										<li>
+											<a href="./UI/tuiyanxitong1.html" target="newFrame">
+												<i class="icon-leaf"></i>
+												推演系统
+											</a>
+										</li>
+
+										<li>
+											<a href="#" class="dropdown-toggle">
+												<i class="icon-pencil"></i>
+
+												河长制
+												<b class="arrow icon-angle-down"></b>
+											</a>
+
+											<ul class="submenu">
+												<li>
+													<a href="./UI/hezhangzhi1.html" target="newFrame">
+														<i class="icon-plus"></i>
+														第一版本
+													</a>
+												</li>
+
+												<li>
+													<a href="./UI/hezhangzhi2.html" target="newFrame">
+														<i class="icon-eye-open"></i>
+														第二版本
+													</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="./UI/yidongAPP.html" target="newFrame">
+										<i class="icon-double-angle-right"></i>
+										移动APP
+									</a>
+								</li>
+
+								<li>
+									<a href="./UI/xuanchuancaiye.html" target="newFrame">
+										<i class="icon-double-angle-right"></i>
+										彩页宣传
+									</a>
+								</li>
+
+								<li>
+									<a href="./UI/banner.html" target="newFrame">
+										<i class="icon-double-angle-right"></i>
+										banner
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-list"></i>
+								<span class="menu-text"> 网页 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="./UI/H5wangye.html" target="newFrame">
+										<i class="icon-double-angle-right"></i>
+										H5网页
+									</a>
+								</li>
+
+								<li>
+									<a href="./UI/houtaiwangye.html" target="newFrame">
+										<i class="icon-double-angle-right"></i>
+										后台网页
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- <li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-edit"></i>
+								<span class="menu-text"> 表单 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="form-elements.html">
+										<i class="icon-double-angle-right"></i>
+										表单组件
+									</a>
+								</li>
+
+								<li>
+									<a href="form-wizard.html">
+										<i class="icon-double-angle-right"></i>
+										向导提示 &amp; 验证
+									</a>
+								</li>
+
+								<li>
+									<a href="wysiwyg.html">
+										<i class="icon-double-angle-right"></i>
+										编辑器
+									</a>
+								</li>
+
+								<li>
+									<a href="dropzone.html">
+										<i class="icon-double-angle-right"></i>
+										文件上传
+									</a>
+								</li>
+							</ul>
+						</li> -->
+
+						<li>
+							<a href="./UI/baozhuang.html" target="newFrame">
+								<i class="icon-list-alt"></i>
+								<span class="menu-text"> 包装 </span>
+							</a>
+						</li>
+
+						<li>
+							<a href="./UI/shouhui.html" target="newFrame">
+								<i class="icon-calendar"></i>
+
+								<span class="menu-text">
+									手绘
+									<!-- <span class="badge badge-transparent tooltip-error" title="2&nbsp;Important&nbsp;Events">
+										<i class="icon-warning-sign red bigger-130"></i>
+									</span> -->
+								</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="./UI/weiye.html"  target="newFrame">
+								<i class="icon-picture"></i>
+								<span class="menu-text"> 微页制作 </span>
+							</a>
+						</li>
+
+						<!-- <li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-tag"></i>
+								<span class="menu-text"> 更多页面 </span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="profile.html">
+										<i class="icon-double-angle-right"></i>
+										用户信息
+									</a>
+								</li>
+
+								<li>
+									<a href="inbox.html">
+										<i class="icon-double-angle-right"></i>
+										收件箱
+									</a>
+								</li>
+
+								<li>
+									<a href="pricing.html">
+										<i class="icon-double-angle-right"></i>
+										售价单
+									</a>
+								</li>
+
+								<li>
+									<a href="invoice.html">
+										<i class="icon-double-angle-right"></i>
+										购物车
+									</a>
+								</li>
+
+								<li>
+									<a href="timeline.html">
+										<i class="icon-double-angle-right"></i>
+										时间轴
+									</a>
+								</li>
+
+								<li>
+									<a href="login.html">
+										<i class="icon-double-angle-right"></i>
+										登录 &amp; 注册
+									</a>
+								</li>
+							</ul>
+						</li> -->
+
+						<!-- <li>
+							<a href="#" class="dropdown-toggle">
+								<i class="icon-file-alt"></i>
+
+								<span class="menu-text">
+									其他页面
+									<span class="badge badge-primary ">5</span>
+								</span>
+
+								<b class="arrow icon-angle-down"></b>
+							</a>
+
+							<ul class="submenu">
+								<li>
+									<a href="faq.html">
+										<i class="icon-double-angle-right"></i>
+										帮助
+									</a>
+								</li>
+
+								<li>
+									<a href="error-404.html">
+										<i class="icon-double-angle-right"></i>
+										404错误页面
+									</a>
+								</li>
+
+								<li>
+									<a href="error-500.html">
+										<i class="icon-double-angle-right"></i>
+										500错误页面
+									</a>
+								</li>
+
+								<li>
+									<a href="grid.html">
+										<i class="icon-double-angle-right"></i>
+										网格
+									</a>
+								</li>
+
+								<li>
+									<a href="blank.html">
+										<i class="icon-double-angle-right"></i>
+										空白页面
+									</a>
+								</li>
+							</ul>
+						</li> -->
+					</ul><!-- /.nav-list -->
+
+					<div class="sidebar-collapse" id="sidebar-collapse">
+						<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+					</div>
+
+					<script type="text/javascript">
+						try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
+					</script>
+				</div>
+
+				<!-- 主要内容 -->
+				<div style="width:calc(100wh-190px); margin-left:190px;">
+					<iframe allowtransparency="true" frameborder="0" name="newFrame" src="./UI/myjianli.html" width="100%" height="750px"></iframe> 
+				</div>
+				<!-- <iframe allowtransparency="true" frameborder="0" name="newFrame" src="./wuzi/index.html" width="100%" height="750px"></iframe>  -->
+
+			</div><!-- /.main-container-inner -->
+
+		</div><!-- /.main-container -->
+
+</body>
+</html>
+
